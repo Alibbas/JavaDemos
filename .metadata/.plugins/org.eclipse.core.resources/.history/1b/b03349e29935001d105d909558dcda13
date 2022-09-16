@@ -1,0 +1,25 @@
+package miniProjeAsalSayi;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int number = s.nextInt();
+
+		boolean isPrime = true;
+		for (int i = 2; i < number; i++) {
+			if (number%i == 0) {
+				isPrime = false;
+				System.out.println("Sayýmýz asal deðildir.");
+			}else {
+				isPrime = true;
+				System.out.println("Sayýmýz asaldýr.");
+			}
+		}
+
+
+	}
+
+}
